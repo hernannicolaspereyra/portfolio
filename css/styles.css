@@ -1,127 +1,70 @@
 *{
+    padding: 0;
     margin: 0;
-    border: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-body{
-    overflow: hidden;
-}
-
-section{
-    position: absolute;
+.background{
     width: 100%;
-    height: 100vh;
-    background-color: black;
+    background-image: radial-gradient(#0e0047,#000001);
 }
 
-span{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 7px;
-    height: 7px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
-    0 0 0 8px rgba(255, 255, 255, 0.1),
-    0 0 20px rgba(255, 255, 255, 1);
-    animation: animate 3s linear infinite;
+.background-trasparente{
+    background: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(0.4rem);
+    color: white;
 }
 
-span::before{
-    content: '';
-    position: absolute;
-    transform: translateY(-50%);
-    width: 100px;
-    height: 2px;
-    background: linear-gradient(90deg, #fff, transparent);
+#inicio{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 20px 20px;
+    text-align: center;
+    gap: 2rem;
 }
 
-@keyframes animate{
-    0%{
-        transform: rotate(315deg) translateX(0);
-        opacity: 1;
-    }
-    70%{
-        opacity: 1;
-    }
-    80%{
-        opacity: 1;
-    }
-    100%{
-        transform: rotate(315deg) translateX(-100vh);
-        opacity: 0;
-    }
+#inicio .inicio-perfil img{
+    width: 300px;
 }
 
-span:nth-child(1){
-    top: 0;
-    right: 19%;
-    left: initial;
-    animation-delay: 0;
-    animation-duration: 4s;
+#inicio .inicio-presentacion{
+    text-align: start;
+    color: white;
 }
-span:nth-child(2){
-    top: 0;
-    right: 80%;
-    left: initial;
-    animation-delay: 0.2s;
-    animation-duration: 5.5s; 
+
+#inicio .inicio-presentacion h2{
+    color: rgb(0, 0, 255);
+    font-size: 2.5rem;
+    font-family: monospace;
 }
-span:nth-child(3){
-    top: 0;
-    right: 64%;
-    left: initial;
-    animation-delay: 0.4s;
-    animation-duration: 4s;
+
+#inicio .inicio-presentacion button{
+    background-color: transparent;
+    color: rgb(120, 118, 234);
+    border: 1px solid rgb(0, 0, 255);
+    padding: 2px;
+    border-radius: 5px;
+
 }
-span:nth-child(4){
-    top: 0;
-    right: 44%;
-    left: initial;
-    animation-delay: 0.6s;
-    animation-duration: 7s;
+
+#sobre-mi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
 }
-span:nth-child(5){
-    top: 0;
-    right: 33%;
-    left: initial;
-    animation-delay: 0.8s;
-    animation-duration: 7.2s;
+
+#sobre-mi .sobre-mi-titulo h2{
+    color: rgb(0, 0, 255);
+    text-decoration: underline;
 }
-span:nth-child(6){
-    top: 0;
-    right: -5%;
-    left: initial;
-    animation-delay: 1s;
-    animation-duration: 3s;
-}
-span:nth-child(7){
-    top: 0px;
-    right: 25%;
-    left: initial;
-    animation-delay: 1.2s;
-    animation-duration: 8s;
-}
-span:nth-child(8){
-    top: 0;
-    right: -10%;
-    left: initial;
-    animation-delay: 1.2s;
-    animation-duration: 9s;
-}
-span:nth-child(9){
-    top: 0;
-    right: 48%;
-    left: initial;
-    animation-delay: 1.2s;
-    animation-duration: 6s;
-}
-span:nth-child(10){
-    top: 0;
-    right: 5%;
-    left: initial;
-    animation-delay: 1.2s;
-    animation-duration: 8s;
+
+#sobre-mi .sobre-mi-descripcion p{
+    padding-top: 10px;
+    color: white;
 }
