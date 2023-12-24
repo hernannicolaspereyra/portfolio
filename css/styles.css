@@ -68,3 +68,54 @@
     padding-top: 10px;
     color: white;
 }
+
+#proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+#proyectos .proyectos-titulo h2{
+    color: rgb(0, 0, 255);
+    text-decoration: underline;
+}
+
+#proyectos .proyectos-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.proyectos-cards .card{
+    width: 20rem;
+    height: 200px;
+    background:linear-gradient(black,yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 30px;
+}
+
+#contactame .contactame-titulo h2{
+    color: rgb(0, 0, 255);
+    text-decoration: underline;
+}
+
+#contactame .contactame-iconos{
+    display: flex;
+    gap: 2rem;
+}
+
+#contactame .contactame-iconos img{
+    width: 40px;
+}
