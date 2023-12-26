@@ -69,6 +69,62 @@
     color: white;
 }
 
+#habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+#habilidades .habilidades-titulo h2{
+    color: rgb(0, 0, 255);
+    text-decoration: underline;
+}
+
+#habilidades .habilidades-logos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 15px;
+}
+
+#habilidades .habilidades-logo{
+    text-align: center;
+    border-radius: 5px;
+    width: 100px;
+}
+
+#habilidades .habilidades-logo:nth-child(1){
+    background-color: #DE4B25;
+    color: rgb(255, 255, 255);
+}
+#habilidades .habilidades-logo:nth-child(2){
+    background-color: #0396DE;
+    color: rgb(255, 255, 255);
+}
+#habilidades .habilidades-logo:nth-child(3){
+    background-color: #EFD81D;
+    color: rgb(0, 0, 0);
+}
+#habilidades .habilidades-logo:nth-child(4){
+    background-color: #C76395;
+    color: rgb(255, 255, 255);
+}
+#habilidades .habilidades-logo:nth-child(5){
+    background-color: #7010EF;
+    color: rgb(255, 255, 255);
+}
+#habilidades .habilidades-logo:nth-child(6){
+    background-color: #2A2B2E;
+    color: #5DD3F4;
+}
+#habilidades .habilidades-logo:nth-child(7){
+    background-color: #E94D32;
+    color: #3F2E00;
+}
+
 #proyectos{
     display: flex;
     flex-direction: column;
@@ -118,4 +174,11 @@
 
 #contactame .contactame-iconos img{
     width: 40px;
+}
+
+@media screen and (min-width: 600px){
+    #inicio{
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
