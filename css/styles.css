@@ -36,10 +36,23 @@
     color: white;
 }
 
-#inicio .inicio-presentacion h2{
-    color: rgb(0, 0, 255);
+#inicio .inicio-presentacion p:nth-child(1)::first-letter{
     font-size: 2.5rem;
     font-family: monospace;
+    font-weight: bold;
+    background: linear-gradient(#006367 ,#00F7FF);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+#inicio .inicio-presentacion h2{
+    font-size: 2.5rem;
+    font-family: monospace;
+    font-weight: bold;
+    background: linear-gradient(#006367 ,#00F7FF);
+    -webkit-background-clip: text;
+    color: transparent;  
+    
 }
 
 #inicio .inicio-presentacion button{
@@ -60,8 +73,12 @@
 }
 
 #sobre-mi .sobre-mi-titulo h2{
-    color: rgb(0, 0, 255);
-    text-decoration: underline;
+    font-size: 2.5rem;
+    font-family: monospace;
+    font-weight: bold;
+    background: linear-gradient(#006367 ,#00F7FF);
+    -webkit-background-clip: text;
+    color: transparent;  
 }
 
 #sobre-mi .sobre-mi-descripcion p{
@@ -78,8 +95,12 @@
 }
 
 #habilidades .habilidades-titulo h2{
-    color: rgb(0, 0, 255);
-    text-decoration: underline;
+    font-size: 2.5rem;
+    font-family: monospace;
+    font-weight: bold;
+    background: linear-gradient(#006367 ,#00F7FF);
+    -webkit-background-clip: text;
+    color: transparent;  
 }
 
 #habilidades .habilidades-logos{
@@ -134,8 +155,12 @@
 }
 
 #proyectos .proyectos-titulo h2{
-    color: rgb(0, 0, 255);
-    text-decoration: underline;
+    font-size: 2.5rem;
+    font-family: monospace;
+    font-weight: bold;
+    background: linear-gradient(#006367 ,#00F7FF);
+    -webkit-background-clip: text;
+    color: transparent;  
 }
 
 #proyectos .proyectos-cards{
@@ -163,8 +188,12 @@
 }
 
 #contactame .contactame-titulo h2{
-    color: rgb(0, 0, 255);
-    text-decoration: underline;
+    font-size: 2.5rem;
+    font-family: monospace;
+    font-weight: bold;
+    background: linear-gradient(#006367 ,#00F7FF);
+    -webkit-background-clip: text;
+    color: transparent;  
 }
 
 #contactame .contactame-iconos{
@@ -180,5 +209,18 @@
     #inicio{
         flex-direction: row;
         justify-content: space-around;
+        height: 100vh;
+    }
+    #sobre-mi{
+        height: 100vh;
+    }
+    #habilidades{
+        height: 100vh;
+    }
+    #proyectos{
+        height: 100vh;
+    }
+    #contacto{
+        height: 100vh;
     }
 }
