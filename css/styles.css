@@ -27,8 +27,31 @@
     gap: 2rem;
 }
 
-#inicio .inicio-perfil img{
-    width: 300px;
+.inicio-perfil{
+    display: flex;
+    flex-direction: row;
+}
+
+.inicio-perfil-contenedor{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(121, 9, 250);
+    box-shadow: 0 0 5px rgb(121, 9, 250),
+    0 0 25px rgb(121, 9, 250),
+    0 0 50px rgb(121, 9, 250),
+    0 0 100px rgb(121, 9, 250);
+    border-radius: 1250px;
+    position: relative;
+}
+.inicio-perfil-imagen{
+    position: absolute;
+    display: flex;
+    align-items: end;
+}
+.inicio-perfil-imagen img{
+    width: 27rem;
+    object-fit: cover;
+    image-rendering: optimizeQuality;
 }
 
 #inicio .inicio-presentacion{
