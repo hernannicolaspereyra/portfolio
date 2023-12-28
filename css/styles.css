@@ -7,7 +7,7 @@
 
 .background{
     width: 100%;
-    background-image: radial-gradient(#0e0047,#000001);
+    background-image: radial-gradient(black,black);
 }
 
 .background-trasparente{
@@ -27,31 +27,11 @@
     gap: 2rem;
 }
 
-.inicio-perfil{
-    display: flex;
-    flex-direction: row;
-}
-
-.inicio-perfil-contenedor{
-    width: 400px;
-    height: 400px;
-    background-color: rgb(121, 9, 250);
-    box-shadow: 0 0 5px rgb(121, 9, 250),
-    0 0 25px rgb(121, 9, 250),
-    0 0 50px rgb(121, 9, 250),
-    0 0 100px rgb(121, 9, 250);
-    border-radius: 1250px;
-    position: relative;
-}
-.inicio-perfil-imagen{
-    position: absolute;
-    display: flex;
-    align-items: end;
-}
-.inicio-perfil-imagen img{
-    width: 27rem;
+.inicio-perfil img{
+    width: 22rem;
+    height: 22rem;
     object-fit: cover;
-    image-rendering: optimizeQuality;
+    filter: drop-shadow(0 0 15px rgb(121, 9, 250));
 }
 
 #inicio .inicio-presentacion{
@@ -234,6 +214,12 @@
         justify-content: space-around;
         height: 100vh;
     }
+
+    .inicio-perfil-imagen{
+        position: absolute;
+        top: 110px;
+    }
+
     #sobre-mi{
         height: 100vh;
     }
@@ -245,5 +231,12 @@
     }
     #contacto{
         height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .inicio-perfil-imagen{
+        position: absolute;
+        right: 50px;
     }
 }
