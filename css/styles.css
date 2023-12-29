@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255);
 }
 
 .background{
@@ -25,6 +26,7 @@
     padding: 20px 20px;
     text-align: center;
     gap: 2rem;
+    height: 100vh;
 }
 
 .inicio-perfil img{
@@ -36,26 +38,17 @@
 
 #inicio .inicio-presentacion{
     text-align: start;
-    color: white;
 }
 
-#inicio .inicio-presentacion p:nth-child(1)::first-letter{
-    font-size: 2.5rem;
-    font-family: monospace;
+#inicio .inicio-presentacion p{
+    font-size: 1.5rem;
     font-weight: bold;
-    background: linear-gradient(#006367 ,#00F7FF);
-    -webkit-background-clip: text;
-    color: transparent;  
 }
 
-#inicio .inicio-presentacion h2{
-    font-size: 2.5rem;
-    font-family: monospace;
-    font-weight: bold;
-    background: linear-gradient(#006367 ,#00F7FF);
-    -webkit-background-clip: text;
-    color: transparent;  
-    
+#inicio .inicio-presentacion b{
+    color: rgb(121, 9, 250);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgb(121, 9, 250);
 }
 
 #inicio .inicio-presentacion button{
@@ -64,7 +57,6 @@
     border: 1px solid rgb(0, 0, 255);
     padding: 2px;
     border-radius: 5px;
-
 }
 
 #sobre-mi{
@@ -73,6 +65,7 @@
     align-items: center;
     justify-content: center;
     padding: 20px 20px;
+    height: 100vh;
 }
 
 #sobre-mi .sobre-mi-titulo h2{
@@ -95,6 +88,7 @@
     align-items: center;
     justify-content: center;
     padding: 20px 20px;
+    height: 100vh;
 }
 
 #habilidades .habilidades-titulo h2{
@@ -155,6 +149,7 @@
     align-items: center;
     justify-content: center;
     padding: 20px 20px;
+    height: 100vh;
 }
 
 #proyectos .proyectos-titulo h2{
@@ -188,6 +183,7 @@
     justify-content: center;
     gap: 1rem;
     padding-bottom: 30px;
+    height: 100vh;
 }
 
 #contactame .contactame-titulo h2{
